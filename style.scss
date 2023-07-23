@@ -1,0 +1,306 @@
+:root{   
+    $font-main: GeneralSans  
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+         url('../fonts/GeneralSans-Variable.woff') format('woff'),
+         url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+         font-weight: 200 700;
+         font-display: swap;
+         font-style: normal;
+  }
+
+* { box-sizing: border-box;
+    text-decoration: none;
+}
+ 
+main{  
+    margin: 80px;    
+}
+
+.header{
+    font-family: $font-main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid  black;
+    padding-bottom:16px;
+    
+    &-logo{
+      width: 400px;
+    }
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 50px;
+  flex: 100;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+
+  &-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    gap: 24px;
+  }
+
+  &-text-link{
+    color: black;
+    font-weight: 400;
+  }
+
+}
+
+   
+.line{
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.img-artlife{
+    width: 100%;
+    padding: 30px 0px 30px 0px
+}
+
+.blackband{
+    font-family: $font-main;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 24px;
+
+    &-textbig{
+      color:white;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      margin: 0px;
+    }
+
+    &-textsmall{
+      display: flex;
+      flex-direction: row;
+      color: white;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+      gap: 24px;
+
+      &-text{
+        margin: 0px;
+      }
+    }
+}
+  
+  
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: $font-main;
+    gap: 65px;
+
+    &-head{
+      font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px 0px ;
+    width: 100%; 
+  }
+
+    &-article{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 50px 0px ;
+
+      &-text{
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%;
+      }
+
+      &-details{
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400; 
+        gap: 20px;
+        align-content: space-around;
+        justify-content: space-between;
+
+        &-text{
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+
+          &-sub{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+          }
+        }
+
+        &-label{
+          display: flex;
+          padding: 10px 30px;
+          align-items: center;
+          gap: 10px;
+          border-radius: 100px;
+          border: 1px solid black;
+          text-transform: uppercase;
+        }
+      }
+  }
+}
+
+ 
+
+.img-dimitar{
+    width: 100%;
+    height: 100%;
+    padding:0px ;
+}
+
+.submain{
+  display: flex;
+  flex-direction: column;
+ &-subtitle{
+  font-family: $font-main;
+  display: flex;
+  flex-direction: row;
+ }
+}
+
+.article{
+  width: 4700px;
+  margin-right:150px;
+
+  &-head{ 
+    font-family: GeneralSans;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid  black;
+    padding-bottom: 50px; 
+    padding-top: 50px;
+
+    &-img{
+      width: auto;
+      height: 400px;
+      margin-right: 45px;
+  }
+    
+    &-detail{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      &-sub{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 110px;
+
+        &-header{
+          font-size: 40px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 120%;
+          margin: 0px;
+        }
+
+        &-text{
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 180%;
+        }
+      }
+    }
+  
+  }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+.subtitle2-2{
+    display: flex;
+    flex-direction: column;
+    font-family: GeneralSans;
+    margin-top: 50px;
+    gap: 48px;
+}
+
+.sub2-2-1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.print{
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.date1{
+    font-family: GeneralSans;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 120%
+}
+.magazin{
+    font-family: GeneralSans;
+    font-size: 22;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.img2{
+    background: none;
+    height: 520px;
+    flex-shrink: 0;
+}
+
